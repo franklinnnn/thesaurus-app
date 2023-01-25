@@ -5,7 +5,7 @@ import {
   fetchSoundsLike,
   fetchRhymesWith,
   fetchDefinition,
-} from "./util/fetchData";
+} from "../util/fetchData";
 
 const Results = ({
   results,

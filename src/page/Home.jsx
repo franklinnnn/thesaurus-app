@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { fetchDefinition, fetchSynonym } from "./util/fetchData";
+import { fetchDefinition, fetchSynonym } from "../util/fetchData";
 
-import "./App.css";
-import Results from "./Results";
-import Footer from "./Footer";
-import Search from "./Search";
+import "../App.css";
+import Results from "../components/Results";
+import Footer from "../components/Footer";
+import Search from "../components/Search";
 
 const Home = ({ theme, toggleTheme }) => {
   const [input, setInput] = useState("");

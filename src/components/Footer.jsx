@@ -11,7 +11,7 @@ const Footer = ({ theme, toggleTheme }) => {
         <a href="https://dictionaryapi.dev/" target="_blank">
           Dictionary API
         </a>
-        <a href="#" target="_blank">
+        <a href="https://github.com/franklinnnn/thesaurus-app" target="_blank">
           GitHub
         </a>
       </div>

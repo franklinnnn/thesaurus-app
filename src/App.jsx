@@ -1,6 +1,6 @@
 import "./App.css";
 import { createContext, useState } from "react";
-import Home from "./Home";
+import Home from "./page/Home";
 
 export const ThemeContext = createContext(null);
 
