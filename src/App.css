@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@200;300;400;500;600&display=swap");
+
+#root {
+  --dark: #04030f;
+  --light: #e8f0ff;
+}
+
+#light {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+#dark {
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+a {
+  font-weight: 500;
+  color: #7d83ff;
+  text-decoration: inherit;
+}
+a:hover {
+  background-color: #7d83ff;
+  background-image: linear-gradient(135deg, #7d83ff, #b770ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#light a {
+  color: #7d83ff;
+}
+#light a:hover {
+  background-color: #7d83ff;
+  background-image: linear-gradient(45deg, #b770ff, #322e5c);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 0 0.2rem 0.2rem 0;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #322e5c;
+  color: #fbfcf0;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+button:hover {
+  border-color: #7d83ff;
+}
+
+#light button {
+  background-color: #7d83ff;
+  color: var(--dark);
+}
+
+#light button:hover {
+  border-color: #b770ff;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+.home {
+  width: 768px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.search {
+  margin-bottom: 4rem;
+}
+
+.search__input {
+  background: #1c1a33;
+  padding: 0.6rem;
+  outline: none;
+  border: 1px solid transparent;
+  width: 30%;
+  border-radius: 0.2rem 0 0 0.2rem;
+  color: #fbfcf0;
+  font-size: 1rem;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.search__clear {
+  background: #1c1a33;
+  padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.search__clear:hover {
+  color: #7d83ff;
+}
+
+#light .search__input,
+#light .search__clear {
+  color: var(--dark);
+  background: #d1d8e6;
+}
+#light .search__clear:hover {
+  color: #b770ff;
+}
+
+.results {
+  height: 55vh;
+}
+
+.results__searched {
+  margin: 1rem 2rem;
+}
+
+.results__searched > h2 {
+  text-align: left;
+  font-size: 3.6rem;
+  margin: 0.6rem 0;
+  line-height: 3.6rem;
+  background-color: #7d83ff;
+  background-image: linear-gradient(45deg, #7d83ff, #1affd5);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+#light .results__searched > h2 {
+  text-align: left;
+  font-size: 3.6rem;
+  margin: 0.6rem 0;
+  line-height: 3.6rem;
+  background-color: #322e5c;
+  background-image: linear-gradient(270deg, #322e5c, #7d83ff);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.results__options {
+  margin: 2rem;
+  gap: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.active {
+  background-color: #7d83ff;
+  background-image: linear-gradient(45deg, #7d83ff, #668fe8);
+  border: 1px solid #7d83ff;
+}
+
+.active:hover {
+  border-color: #7d83ff;
+}
+
+#light .active {
+  background-color: #322e5c;
+  background-image: linear-gradient(270deg, #b770ff, #7d83ff);
+  border: 1px solid #7d83ff;
+}
+
+#light .active:hover {
+  border-color: #b770ff;
+}
+
+.results__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  gap: 1rem;
+}
+
+.results__word {
+  margin: 0;
+  padding: 0;
+}
+.results__word > span {
+  background: #1c1a33;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+  transition: 0.2s ease;
+}
+.results__word > span:hover {
+  color: var(--dark);
+  background-color: #7d83ff;
+  background-image: linear-gradient(45deg, #7d83ff, #1affd5);
+  cursor: pointer;
+}
+
+#light .results__word > span {
+  background: #d1d8e6;
+}
+
+#light .results__word > span:hover {
+  color: var(--light);
+  background-color: #322e5c;
+  background-image: linear-gradient(270deg, #322e5c, #7d83ff);
+  cursor: pointer;
+}
+
+.definition {
+  text-align: left;
+}
+.definition__word {
+  margin: 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.2s ease;
+}
+
+.definition__part {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.2rem 0.4rem;
+  margin-right: 4rem;
+  transition: 0.2s ease;
+}
+
+.definition__part:hover {
+  background-color: #1c1a33;
+  border-radius: 0.2rem;
+}
+
+#light .definition__part:hover {
+  background-color: #d1d8e6;
+}
+
+.definition__part > span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.definition__list {
+  display: flex;
+  font-weight: 400;
+}
+
+.footer {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  gap: 2rem;
+  bottom: 0;
+}
+
+.footer__links {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer__theme {
+  padding-top: 0.4rem;
+}
+
+.icon__light {
+  color: #7d83ff;
+  scale: 1.2;
+  transition: 0.4s ease;
+}
+
+.icon__light:hover {
+  cursor: pointer;
+  color: var(--light);
+  scale: 1.6;
+}
+
+.icon__dark {
+  color: #7d83ff;
+  transition: 0.4s ease;
+}
+
+.icon__dark:hover {
+  cursor: pointer;
+  color: var(--dark);
+  scale: 1.2;
+}
