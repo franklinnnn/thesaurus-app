@@ -47,13 +47,13 @@ const Results = ({
     setLoading(false);
   };
   return (
-    <div className="results" id="results">
+    <section className="results" id="results">
       <div className="results__searched">
         <h2>{searched}</h2>
         <Definition definition={definition} searched={searched} />
       </div>
 
-      <div className="results__options">
+      <section className="results__options">
         <button
           className={activeButton === "synonyms" ? "active" : undefined}
           id={"synonyms"}
@@ -75,12 +75,12 @@ const Results = ({
         >
           rhymes with
         </button>
-      </div>
+      </section>
 
       {loading ? (
         <h2>loading...</h2>
       ) : (
-        <div>
+        <section>
           {results.length < 1 ? (
             <div className="results__list">No results found</div>
           ) : (
@@ -96,9 +96,9 @@ const Results = ({
               ))}
             </div>
           )}
-        </div>
+        </section>
       )}
-    </div>
+    </section>
   );
 };
 

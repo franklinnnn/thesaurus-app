@@ -11,9 +11,9 @@ const App = () => {
   };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="app" id={theme}>
+      <main className="app" id={theme}>
         <Home theme={theme} toggleTheme={toggleTheme} />
-      </div>
+      </main>
     </ThemeContext.Provider>
   );
 };

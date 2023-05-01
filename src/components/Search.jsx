@@ -2,7 +2,7 @@ import React from "react";
 
 const Search = ({ handleSubmit, input, setInput }) => {
   return (
-    <div className="search" id="search">
+    <section className="search" id="search">
       <form onSubmit={handleSubmit} action="/word" className="search__form">
         <input
           type="text"
@@ -10,12 +10,14 @@ const Search = ({ handleSubmit, input, setInput }) => {
           placeholder="enter word or phrase"
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          role="search bar"
         />
         <span
           className="search__clear"
           onClick={() => {
             setInput("");
           }}
+          role="clear search"
         >
           X
         </span>
@@ -23,7 +25,7 @@ const Search = ({ handleSubmit, input, setInput }) => {
           GO
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

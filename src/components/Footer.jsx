@@ -3,8 +3,8 @@ import { BsSunFill, BsMoonFill } from "react-icons/bs";
 
 const Footer = ({ theme, toggleTheme }) => {
   return (
-    <div className="footer">
-      <div className="footer__links">
+    <footer className="footer">
+      <section className="footer__links">
         <a href="https://www.datamuse.com/api/" target="_blank">
           Datamuse API
         </a>
@@ -14,8 +14,8 @@ const Footer = ({ theme, toggleTheme }) => {
         <a href="https://github.com/franklinnnn/thesaurus-app" target="_blank">
           GitHub
         </a>
-      </div>
-      <div className="footer__theme">
+      </section>
+      <section className="footer__theme">
         {theme === "dark" ? (
           <div onClick={toggleTheme} className="icon__light">
             <BsSunFill />
@@ -25,8 +25,8 @@ const Footer = ({ theme, toggleTheme }) => {
             <BsMoonFill />
           </div>
         )}
-      </div>
-    </div>
+      </section>
+    </footer>
   );
 };
 

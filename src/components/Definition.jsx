@@ -1,6 +1,6 @@
 const Definition = ({ definition, searched }) => {
   return (
-    <div className="definition" id="definition">
+    <section className="definition" id="definition">
       {/* {definition?.map((word) => (
         <div className="definition__word">
           {word?.meanings.slice(0, 1).map((meaning) => (
@@ -46,7 +46,7 @@ const Definition = ({ definition, searched }) => {
           </p>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 export default Definition;

@@ -26,13 +26,15 @@ const Home = ({ theme, toggleTheme }) => {
     setLoading(false);
   };
   return (
-    <div className="home" id={theme}>
-      <h1>find words</h1>
+    <article className="home" id={theme}>
+      <header>
+        <h1>find words</h1>
+      </header>
       <Search handleSubmit={handleSubmit} input={input} setInput={setInput} />
       {loading ? (
         <h2>Loading...</h2>
       ) : (
-        <div>
+        <section>
           {showResults && (
             <Results
               results={results}
@@ -46,10 +48,10 @@ const Home = ({ theme, toggleTheme }) => {
               setActiveButton={setActiveButton}
             />
           )}
-        </div>
+        </section>
       )}
       <Footer theme={theme} toggleTheme={toggleTheme} />
-    </div>
+    </article>
   );
 };
 
